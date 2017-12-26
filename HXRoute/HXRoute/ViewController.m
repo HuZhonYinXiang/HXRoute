@@ -30,11 +30,6 @@
 
 - (void)pushOneView{
     HXRouter *router = [HXRouter shareHXRouter];
-//    [router handleURL:[NSURL URLWithString:@"huxin://oneVC/?type=1"] withSource:self parameters:nil completion:^(NSDictionary * _Nullable response, NSError * _Nullable error) {
-//        if (response) {
-//
-//        }
-//    }];
     [router handleURL:[NSURL URLWithString:@"huxin://oneVC/?type=1"] withSource:nil];
 }
 

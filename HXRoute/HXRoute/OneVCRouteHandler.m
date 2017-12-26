@@ -21,7 +21,7 @@
 }
 
 - (void)showViewController:(UIViewController *)targetViewController source:(UIViewController *)sourceViewController deepLink:(HXLink *)deepLink{
-    NSLog(@"%@",deepLink.parameters);
+//    NSLog(@"%@",deepLink.parameters);
     if (targetViewController && sourceViewController) {
         [sourceViewController presentViewController:targetViewController animated:true completion:nil];
     }

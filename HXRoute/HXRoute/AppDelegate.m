@@ -24,11 +24,6 @@
     HXRouter *router = [HXRouter shareHXRouter];
     router.delegate = self;
     
-//    HXRouteDefinition *definition = [HXRouteDefinition routeWithPattern:@"huxin://oneVC/?id" handlerBlock:^(HXDLLink *deepLink) {
-//
-//    }];
-//    [router addRoute:definition];
-    
     HXRouteDefinition *definition = [HXRouteDefinition routeWithPattern:@"huxin://oneVC/" handler:[[OneVCRouteHandler alloc] init]];
     [router addRoute:definition];
     return YES;
